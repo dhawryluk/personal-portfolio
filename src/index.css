@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-deepForestGreen: #0c1f14;
+  --color-leafGreen: #21523a;
+  --color-softFern: #396c4c;
+  --color-mistGrey: #e1e5e2;
+  --color-offWhite: #f7f8f7;
+  --font-allerta: 'Allerta Stencil', sans-serif;
+}
+

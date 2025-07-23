@@ -1,11 +1,11 @@
 import { useState } from "react";
 import DarkHero from "../assets/DarkHero.jpg";
-import LightHero from '../assets/LightHero.jpg';
+import LightHero from "../assets/LightHero.jpg";
 import DLogo from "../assets/DLogo.svg?react";
 import KHLogo from "../assets/KHLogo.svg?react";
 import SideSocials from "./SideSocials";
 import MoodToggle from "./MoodToggle";
-   
+
 const Hero = () => {
   const [mood, setMood] = useState("dark");
 
@@ -28,7 +28,7 @@ const Hero = () => {
       <SideSocials className="flex absolute z-50 top-1/2 left-0 -translate-y-1/2" />
       <MoodToggle mood={mood} setMood={setMood} />
 
-      <div className="absolute bottom-8 w-full flex text-2xl md:text-5xl lg:text-6xl xl:text-8xl font-semibold">
+      <div className="absolute bottom-8 w-full flex text-xl md:text-3xl lg:text-4xl xl:text-6xl font-semibold">
         <div className="w-1/2 flex justify-center">
           <h1 className="text-black mix-blend-soft-light">Web Designer</h1>
         </div>

@@ -1,27 +1,35 @@
 import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
-import { NavLink } from "react-router-dom";
 
 const SideSocials = ({ className }) => {
   return (
     <div className={className}>
       <div className="px-4 py-6 font-bold flex flex-col gap-6 text-offWhite">
-        <NavLink to="https://github.com/your-profile" target="_blank" rel="noopener noreferrer">
-          <div className="w-8 sm:w-10 lg:w-12">
-            <FaGithub className="w-full h-full hover:text-leafGreen hover:scale-110 transition-transform duration-200" />
-          </div>
-        </NavLink>
+        <a
+          href="https://github.com/dhawryluk"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="cursor-pointer"
+        >
+          <FaGithub className="w-10 h-10 hover:text-leafGreen hover:scale-110 transition-transform duration-200" />
+        </a>
 
-        <NavLink to="https://linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer">
-          <div className="w-8 sm:w-10 lg:w-12">
-            <FaLinkedin className="w-full h-full hover:text-leafGreen hover:scale-110 transition-transform duration-200" />
-          </div>
-        </NavLink>
+        <a
+          href="https://www.linkedin.com/in/derek-hawryluk/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="cursor-pointer"
+        >
+          <FaLinkedin className="w-10 h-10 hover:text-leafGreen hover:scale-110 transition-transform duration-200" />
+        </a>
 
-        <NavLink to="https://twitter.com/your-profile" target="_blank" rel="noopener noreferrer">
-          <div className="w-8 sm:w-10 lg:w-12">
-            <FaTwitter className="w-full h-full hover:text-leafGreen hover:scale-110 transition-transform duration-200" />
-          </div>
-        </NavLink>
+        <a
+          href="https://twitter.com/dhawryluk"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="cursor-pointer"
+        >
+          <FaTwitter className="w-10 h-10 hover:text-leafGreen hover:scale-110 transition-transform duration-200" />
+        </a>
       </div>
     </div>
   );

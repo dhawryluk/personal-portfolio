@@ -12,20 +12,19 @@ const Hero = () => {
   const backgroundImage = mood === "dark" ? DarkHero : LightHero;
 
   useEffect(() => {
-  const savedMood = localStorage.getItem("mood") || "dark";
-  setMood(savedMood);
-  document.documentElement.classList.toggle("dark", savedMood === "dark");
-}, []);
+    const savedMood = localStorage.getItem("mood") || "dark";
+    setMood(savedMood);
+    document.documentElement.classList.toggle("dark", savedMood === "dark");
+  }, []);
 
-useEffect(() => {
-  localStorage.setItem("mood", mood);
-  if (mood === "dark") {
-    document.documentElement.classList.add("dark");
-  } else {
-    document.documentElement.classList.remove("dark");
-  }
-}, [mood]);
-
+  useEffect(() => {
+    localStorage.setItem("mood", mood);
+    if (mood === "dark") {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+  }, [mood]);
 
   return (
     <div className="relative h-screen w-full overflow-hidden">
@@ -37,8 +36,8 @@ useEffect(() => {
 
       <div className="absolute inset-y-0 left-0 w-1/2 bg-white/30 backdrop-blur-sm" />
       <div className="absolute inset-0 flex items-center justify-center gap-4">
-        <DLogo className="h-[150px] md:h-[192px] lg:h-[250px] w-auto mix-blend-soft-light -mr-2" />
-        <KHLogo className="h-[150px] md:h-[192px] lg:h-[250px] w-auto z-30" />
+        <DLogo className="h-[150px] md:h-[192px] lg:h-[230px] w-auto mix-blend-soft-light -mr-2" />
+        <KHLogo className="h-[150px] md:h-[192px] lg:h-[230px] w-auto z-30" />
       </div>
 
       <SideSocials className="flex absolute z-50 top-1/2 left-0 -translate-y-1/2" />

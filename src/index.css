@@ -2,17 +2,16 @@
 @import "tailwindcss";
 @custom-variant dark (&:where(.dark, .dark *));
 
-
 @theme {
   --color-deepForestGreen: #0c1f14;
   --color-leafGreen: #21523a;
   --color-softFern: #396c4c;
   --color-mistGrey: #e1e5e2;
   --color-offWhite: #f7f8f7;
-  --color-coastalTeal: '#2c8c84';
-  --color-driftwoodBeige: '#e6d6b8';
-  --color-sunbleachedSand: '#f4ecd8';
-  --color-seafoamMist: '#b6ddd2';
-  --color-coralClay: '#d9916d';
-  --font-allerta: 'Allerta Stencil', sans-serif;
+  --color-coastalTeal: #2c8c84;
+  --color-driftwoodBeige: #e6d6b8;
+  --color-sunbleachedSand: #f4ecd8;
+  --color-seafoamMist: #b6ddd2;
+  --color-coralClay: #d9916d;
+  --font-allerta: "Allerta Stencil", sans-serif;
 }

@@ -2,7 +2,8 @@ import Profile from "../assets/ProfilePic.png";
 
 const About = () => {
   return (
-    <div className="bg-teal-200 dark:bg-leafGreen text-offWhite p-8">
+    
+    <div className="bg-teal-500 dark:bg-leafGreen text-offWhite p-8">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
         <div className="flex justify-center">
           <img src={Profile} alt="Profile" className="h-60 w-auto rounded-lg" />

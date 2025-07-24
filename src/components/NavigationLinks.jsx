@@ -1,5 +1,6 @@
 const NavigationLinks = ({ closeMenu }) => {
-  const linkStyles = "hover:text-leafGreen text-offWhite ease-in duration-200";
+  const linkStyles =
+    "hover:text-coastalTeal dark:hover:text-softFern text-offWhite ease-in duration-200";
 
   const scrollToSection = (id) => {
     const el = document.getElementById(id);
@@ -21,11 +22,11 @@ const NavigationLinks = ({ closeMenu }) => {
     <>
       {links.map(({ id, label }) => (
         <ul>
-        <li key={id}>
-          <button onClick={() => scrollToSection(id)} className={linkStyles}>
-            {label}
-          </button>
-        </li>
+          <li key={id}>
+            <button onClick={() => scrollToSection(id)} className={linkStyles}>
+              {label}
+            </button>
+          </li>
         </ul>
       ))}
     </>

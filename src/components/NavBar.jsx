@@ -2,9 +2,8 @@ import { useState, useEffect } from "react";
 import NavigationLinks from "./NavigationLinks";
 import { FaBars, FaX } from "react-icons/fa6";
 
-
 const NavBar = () => {
-     const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
     const handleResize = () => {
@@ -25,17 +24,19 @@ const NavBar = () => {
   };
   return (
     <>
-      <nav className="absolute top-0 z-50 w-full h-24 pt-6 px-4 hidden md:block">
+      <nav className="absolute top-0 z-100 w-full h-24 pt-6 px-4 hidden md:block">
         <div className="flex w-full text-lg text-offWhite font-bold md:justify-between">
           <h1>DEREK HAWRYLUK</h1>
           <div className="flex gap-4 sm:gap-5 md:gap-6 lg:gap-12 xl:gap-16">
-          <NavigationLinks closeMenu={closeMenu} />
+            <NavigationLinks closeMenu={closeMenu} />
           </div>
         </div>
       </nav>
       <div className="">
         <div className="md:hidden p-4 h-full flex justify-between items-center">
-          <h1 className="text-deepForestGreen md:text-offWhite font-bold">DEREK HAWRYLUK</h1>
+          <h1 className="text-deepForestGreen md:text-offWhite font-bold">
+            DEREK HAWRYLUK
+          </h1>
           <button
             onClick={() => setIsOpen((prev) => !prev)}
             className="z-10 md:hidden bg-offWhite text-deepForestGreen p-2 rounded-lg ease-in-out duration-300 "
@@ -54,7 +55,7 @@ const NavBar = () => {
         )}
       </div>
     </>
-  )
-}
+  );
+};
 
-export default NavBar
+export default NavBar;

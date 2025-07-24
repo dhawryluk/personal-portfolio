@@ -10,7 +10,7 @@ const SideSocials = ({ className }) => {
           rel="noopener noreferrer"
           className="cursor-pointer"
         >
-          <FaGithub className="w-10 h-10 hover:text-leafGreen hover:scale-110 transition-transform duration-200" />
+          <FaGithub className="w-10 h-10 hover:text-coastalTeal dark:hover:text-softFern hover:scale-110 transition-transform duration-200" />
         </a>
 
         <a
@@ -19,7 +19,7 @@ const SideSocials = ({ className }) => {
           rel="noopener noreferrer"
           className="cursor-pointer"
         >
-          <FaLinkedin className="w-10 h-10 hover:text-leafGreen hover:scale-110 transition-transform duration-200" />
+          <FaLinkedin className="w-10 h-10 hover:text-coastalTeal dark:hover:text-softFern hover:scale-110 transition-transform duration-200" />
         </a>
 
         <a
@@ -28,7 +28,7 @@ const SideSocials = ({ className }) => {
           rel="noopener noreferrer"
           className="cursor-pointer"
         >
-          <FaTwitter className="w-10 h-10 hover:text-leafGreen hover:scale-110 transition-transform duration-200" />
+          <FaTwitter className="w-10 h-10 hover:text-coastalTeal dark:hover:text-softFern hover:scale-110 transition-transform duration-200" />
         </a>
       </div>
     </div>

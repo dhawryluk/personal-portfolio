@@ -40,7 +40,7 @@ const Hero = () => {
         <KHLogo className="h-[150px] md:h-[192px] lg:h-[230px] w-auto z-30" />
       </div>
 
-      <SideSocials className="flex absolute z-50 top-1/2 left-0 -translate-y-1/2" />
+      <SideSocials className="flex absolute z-100 top-1/2 left-0 -translate-y-1/2" />
       <MoodToggle mood={mood} setMood={setMood} />
 
       <div className="absolute bottom-8 w-full flex text-2xl md:text-3xl lg:text-4xl xl:text-6xl font-semibold">

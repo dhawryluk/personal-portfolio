@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import NavLinks from "./NavigationLinks";
+import NavigationLinks from "./NavigationLinks";
 import { FaBars, FaX } from "react-icons/fa6";
 
 
@@ -25,12 +25,12 @@ const NavBar = () => {
   };
   return (
     <>
-      <nav className="absolute top-0 z-50 w-full h-24 pt-6 px-4 md:flex hidden">
+      <nav className="absolute top-0 z-50 w-full h-24 pt-6 px-4 hidden md:block">
         <div className="flex w-full text-lg text-offWhite font-bold md:justify-between">
           <h1>DEREK HAWRYLUK</h1>
-          <ul className="hidden md:flex gap-4 sm:gap-5 md:gap-6 lg:gap-12 xl:gap-16">
-            <NavLinks closeMenu={closeMenu} />
-          </ul>
+          <div className="flex gap-4 sm:gap-5 md:gap-6 lg:gap-12 xl:gap-16">
+          <NavigationLinks closeMenu={closeMenu} />
+          </div>
         </div>
       </nav>
       <div className="">
@@ -49,7 +49,7 @@ const NavBar = () => {
         </div>
         {isOpen && (
           <div className="top-18 right-0 w-full h-screen flex flex-col p-4 gap-4 items-end text-2xl bg-gradient-to-b from-deepForestGreen to-transparent text-offWhite font-bold md:hidden ">
-            <NavLinks closeMenu={closeMenu} />
+            <NavigationLinks closeMenu={closeMenu} />
           </div>
         )}
       </div>

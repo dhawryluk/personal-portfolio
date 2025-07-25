@@ -5,10 +5,9 @@ import Skills from "../components/Skills";
 import ProjectsGrid from "../components/ProjectsGrid";
 import Contact from "../components/Contact";
 
-
 const Home = () => {
   return (
-    <>
+    <div className="bg-sunbleachedSand dark:bg-mistGrey text-coastalTeal dark:text-leafGreen">
       <NavBar />
 
       <section id="hero">
@@ -26,10 +25,10 @@ const Home = () => {
       <section id="skills">
         <Skills />
       </section>
-          <section id="contact">
+      <section id="contact">
         <Contact />
       </section>
-    </>
+    </div>
   );
 };
 

@@ -11,11 +11,12 @@ import {
 import { SiTailwindcss, SiSupabase, SiVercel } from "react-icons/si";
 import { BsStripe } from "react-icons/bs";
 
-
 const Skills = () => {
   return (
-      <div className="bg-stone-300 py-4">
-      <h2 className="text-2xl text-center">Skills and Languages</h2>
+    <div className="bg-driftwoodBeige dark:bg-softFern py-12">
+      <h2 className="text-3xl font-bold text-center mb-8 text-coastalTeal dark:text-offWhite">
+        Skills and Languages
+      </h2>
       <div className="w-1/2 m-auto grid grid-cols-4 gap-4 justify-items-center my-6 text-black">
         <FaHtml5 className="text-5xl hover:text-orange-500 transition" />
         <FaCss3Alt className="text-5xl hover:text-blue-500 transition" />
@@ -31,7 +32,7 @@ const Skills = () => {
         <FaShopify className="text-5xl hover:text-green-600 transition" />
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Skills
+export default Skills;

@@ -11,27 +11,25 @@ const ProjectCard = ({
 }) => {
   return (
     <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        whileHover={{ scale: 1.03 }}
-        transition={{ duration: 0.4 }}
-      className="bg-white shadow-xl rounded-2xl overflow-hidden hover:shadow-2xl group"
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      whileHover={{ scale: 1.03 }}
+      transition={{ duration: 0.4 }}
+      className="bg-white shadow-xl rounded-2xl overflow-hidden hover:shadow-2xl group mb-8"
     >
       <div className="relative h-48 overflow-hidden">
-<img
-  src={image}
-  alt={title}
-  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-/>
-
-
+        <img
+          src={image}
+          alt={title}
+          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+        />
         <div className="absolute top-2 right-2 flex gap-2 z-10">
           {liveUrl && (
             <a
               href={liveUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-white/80 hover:bg-white p-1 rounded-full text-gray-700 shadow-md"
+              className="bg-mistGrey hover:bg-offWhite p-1 rounded-full text-gray-700 shadow-md"
             >
               <FaExternalLinkAlt />
             </a>
@@ -41,7 +39,7 @@ const ProjectCard = ({
               href={repoUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-white/80 hover:bg-white p-1 rounded-full text-gray-700 shadow-md"
+              className="bg-mistGrey hover:bg-offWhite p-1 rounded-full text-gray-700 shadow-md"
             >
               <FaGithub />
             </a>

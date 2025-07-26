@@ -9,10 +9,7 @@ const Home = () => {
   return (
     <div className="bg-sunbleachedSand dark:bg-mistGrey text-coastalTeal dark:text-leafGreen">
       <NavBar />
-
-      <section id="hero">
-        <Hero />
-      </section>
+      <Hero />
 
       <section id="about">
         <About />

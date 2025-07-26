@@ -11,7 +11,6 @@ const NavigationLinks = ({ closeMenu }) => {
   };
 
   const links = [
-    { id: "hero", label: "Home" },
     { id: "about", label: "About" },
     { id: "projects", label: "Projects" },
     { id: "skills", label: "Skills" },

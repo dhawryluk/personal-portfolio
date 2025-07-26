@@ -35,7 +35,7 @@ const projects = [
 
 const ProjectsGrid = () => {
   return (
-    <section className="px-4 py-10 max-w-7xl mx-auto">
+    <section className="px-8 py-10 max-w-7xl mx-auto">
       <h2 className="text-3xl font-bold text-center mb-8">Featured Projects</h2>
       <div className="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         {projects.map((project, idx) => (

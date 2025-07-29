@@ -32,9 +32,9 @@ const NavBar = () => {
           </div>
         </div>
       </nav>
-      <div className="">
+      <div className="md:hidden absolute top-0 z-100 w-full h-24 bg-coastalTeal dark:bg-deepForestGreen text-offWhite">
         <div className="md:hidden p-4 h-full flex justify-between items-center">
-          <h1 className="text-deepForestGreen md:text-offWhite font-bold">
+          <h1 className="text-offWhite font-bold">
             DEREK HAWRYLUK
           </h1>
           <button
@@ -49,7 +49,7 @@ const NavBar = () => {
           </button>
         </div>
         {isOpen && (
-          <div className="top-18 right-0 w-full h-screen flex flex-col p-4 gap-4 items-end text-2xl bg-gradient-to-b from-deepForestGreen to-transparent text-offWhite font-bold md:hidden ">
+          <div className="top-18 right-0 w-full h-screen flex flex-col p-4 gap-4 items-end text-2xl bg-gradient-to-b from-coastalTeal dark:from-deepForestGreen to-transparent text-offWhite font-bold md:hidden ">
             <NavigationLinks closeMenu={closeMenu} />
           </div>
         )}

@@ -1,8 +1,7 @@
 import DarkHero from "../assets/DarkHero.jpg";
 import LightHero from "../assets/LightHero.jpg";
 
-const Footer = () => {
-  const mood = localStorage.getItem("mood") || "dark";
+const Footer = ({ mood }) => {
   const backgroundImage = mood === "dark" ? DarkHero : LightHero;
 
   return (

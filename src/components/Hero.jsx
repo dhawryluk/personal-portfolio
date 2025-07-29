@@ -1,4 +1,3 @@
-import { useState, useEffect } from "react";
 import DarkHero from "../assets/DarkHero.jpg";
 import LightHero from "../assets/LightHero.jpg";
 import DLogo from "../assets/DLogo.svg?react";
@@ -6,25 +5,8 @@ import KHLogo from "../assets/KHLogo.svg?react";
 import SideSocials from "./SideSocials";
 import MoodToggle from "./MoodToggle";
 
-const Hero = () => {
-  const [mood, setMood] = useState("dark");
-
+const Hero = ({ mood, setMood }) => {
   const backgroundImage = mood === "dark" ? DarkHero : LightHero;
-
-  useEffect(() => {
-    const savedMood = localStorage.getItem("mood") || "dark";
-    setMood(savedMood);
-    document.documentElement.classList.toggle("dark", savedMood === "dark");
-  }, []);
-
-  useEffect(() => {
-    localStorage.setItem("mood", mood);
-    if (mood === "dark") {
-      document.documentElement.classList.add("dark");
-    } else {
-      document.documentElement.classList.remove("dark");
-    }
-  }, [mood]);
 
   return (
     <div className="relative h-screen w-full overflow-hidden">

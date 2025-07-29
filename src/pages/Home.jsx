@@ -4,6 +4,7 @@ import About from "../components/About";
 import Skills from "../components/Skills";
 import ProjectsGrid from "../components/ProjectsGrid";
 import Contact from "../components/Contact";
+import Footer from "../components/Footer";
 
 const Home = () => {
   return (
@@ -25,6 +26,7 @@ const Home = () => {
       <section id="contact">
         <Contact />
       </section>
+      <Footer />
     </div>
   );
 };

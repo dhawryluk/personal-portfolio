@@ -8,37 +8,29 @@ const About = () => {
           <img src={Profile} alt="Profile" className="h-48 md:h-96 w-auto" />
         </div>
         <div className="text-justify">
-          <h2 className="text-2xl text-center my-4">About Me</h2>
+          <h1 class="text-2xl md:text-3xl font-extrabold mb-4 relative inline-block">
+            <span class="relative z-10">Hello, I&rsquo;m Derek</span>
+          </h1>
           <p>
-            Hey, I&rsquo;m Derek — a front-end developer who&rsquo;s all about
-            building clean, responsive, and user-friendly websites that
-            don&rsquo;t just look good, but feel good to use.
+            I&rsquo;m a front-end developer who&rsquo;s passionate about
+            building clean, responsive websites that feel as good to use as they
+            look.
           </p>
           <p className="mt-4">
-            I recently completed SAIT&rsquo;s Web Development Certificate
-            program, where I sharpened my skills in HTML, CSS, JavaScript, and
-            frameworks like React, Vue.js, and Nuxt.js. I love working with
-            tools like Tailwind CSS, Supabase, and Figma to bring ideas to life
-            and make sure everything is just as intuitive under the hood as it
-            is on the screen.
+            After completing SAIT&rsquo;s Web Development Certificate, I dove
+            into modern tools like React, Vue.js, and Nuxt.js to bring engaging,
+            user-focused interfaces to life. My background in sales leadership
+            and customer experience shaped how I think — from communication and
+            adaptability to always designing with the end user in mind.
           </p>
           <p className="mt-4">
-            Before getting into web development, I spent years in sales
-            leadership and customer experience. That background taught me how to
-            think from the user&rsquo;s perspective, communicate clearly, and
-            stay adaptable — skills that directly shape the way I approach
-            building digital experiences today.
+            Before tech, I worked in hospitality and interior design consulting
+            — where I picked up an eye for layout, flow, and visual balance.
+            Now, I use those same instincts in my code and interface design.
           </p>
           <p className="mt-4">
-            I also have a creative streak from my earlier work in hospitality
-            and interior design consulting, which gives me a solid sense for
-            visual design, space, and flow — all things that come in handy when
-            designing interfaces with strong UI/UX.
-          </p>
-          <p className="mt-4">
-            This portfolio is a reflection of everything I love: thoughtful
-            design, practical problem-solving, and clean, modern code. Thanks
-            for checking it out!
+            This portfolio brings all of that together: thoughtful design, clear
+            problem-solving, and modern development.
           </p>
         </div>
       </div>

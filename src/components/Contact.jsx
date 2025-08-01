@@ -23,7 +23,7 @@ const ContactUs = () => {
   };
 
   return (
-    <div className="px-4 sm:px-8 md:px-12 lg:px-0">
+    <div className="px-4 sm:px-8 md:px-12 lg:px-20 mt-12">
       <form
         ref={form}
         onSubmit={sendEmail}
@@ -33,23 +33,32 @@ const ContactUs = () => {
           Get in Touch
         </h2>
 
-        <label className="ml-2 dark:text-softFern text-coastalTeal font-semibold">Name</label>
+        <label className="ml-2 dark:text-softFern text-coastalTeal font-semibold">
+          Name
+        </label>
         <input
           type="text"
           name="user_name"
+          required
           className="bg-sunbleachedSand dark:bg-mistGrey border-2 border-driftwoodBeige dark:border-deepForestGreen rounded-md p-2 mb-4 focus:outline-none focus:ring-2 focus:ring-coastalTeal dark:focus:ring-softFern transition w-full"
         />
 
-        <label className="ml-2 dark:text-softFern text-coastalTeal font-semibold">Email</label>
+        <label className="ml-2 dark:text-softFern text-coastalTeal font-semibold">
+          Email
+        </label>
         <input
           type="email"
           name="user_email"
+          required
           className="bg-sunbleachedSand dark:bg-mistGrey border-2 border-driftwoodBeige dark:border-deepForestGreen rounded-md p-2 mb-4 focus:outline-none focus:ring-2 focus:ring-coastalTeal dark:focus:ring-softFern transition w-full"
         />
 
-        <label className="ml-2 dark:text-softFern text-coastalTeal font-semibold">Message</label>
+        <label className="ml-2 dark:text-softFern text-coastalTeal font-semibold">
+          Message
+        </label>
         <textarea
           name="message"
+          required
           rows="5"
           className="bg-sunbleachedSand dark:bg-mistGrey border-2 border-driftwoodBeige dark:border-deepForestGreen rounded-md p-2 mb-6 focus:outline-none focus:ring-2 focus:ring-coastalTeal dark:focus:ring-softFern transition w-full"
         />

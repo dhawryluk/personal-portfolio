@@ -28,7 +28,7 @@ const projects = [
       "A platform for gaming and anime fans to connect, stay updated on the latest news, and purchase themed merchandise. Built with Nuxt 3 and Vue 3, styled using Tailwind CSS, with Supabase for backend services and Stripe for secure payments.",
     techStack: ["Nuxt3", "Vue3", "Tailwind CSS", "Supabase", "Stripe"],
     image: Play,
-    liveUrl: "https://4play.gg",
+    liveUrl: "https://4play-azure-ten.vercel.app/",
     repoUrl: "https://github.com/dhawryluk/capstone",
   },
 ];

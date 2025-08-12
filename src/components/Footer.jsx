@@ -27,7 +27,7 @@ const Footer = ({ mood }) => {
             Linkedin
           </a>
           <a
-            href="https://twitter.com/dhawryluk"
+            href="https://x.com/derek_hawryluk"
             target="_blank"
             rel="noopener noreferrer"
             className="cursor-pointer hover:text-seafoamMist dark:hover:text-leafGreen transition-colors duration-300"

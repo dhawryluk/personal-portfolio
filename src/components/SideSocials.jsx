@@ -23,7 +23,7 @@ const SideSocials = ({ className }) => {
         </a>
 
         <a
-          href="https://twitter.com/dhawryluk"
+          href="https://x.com/derek_hawryluk"
           target="_blank"
           rel="noopener noreferrer"
           className="cursor-pointer"

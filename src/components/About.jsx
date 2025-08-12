@@ -5,7 +5,7 @@ const About = () => {
     <div className="bg-coastalTeal dark:bg-leafGreen text-offWhite p-8">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
         <div className="flex justify-center">
-          <img src={Profile} alt="Profile" className="h-48 md:h-96 w-auto" />
+          <img src={Profile} alt="Profile" className="h-48 md:h-96 w-auto rounded-2xl shadow-xl" />
         </div>
         <div className="text-justify">
           <h1 class="text-2xl md:text-3xl font-extrabold mb-4 relative inline-block">

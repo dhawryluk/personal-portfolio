@@ -22,7 +22,7 @@ const Footer = ({ mood }) => {
             href="https://www.linkedin.com/in/derek-hawryluk/"
             target="_blank"
             rel="noopener noreferrer"
-            className="cursor-pointer"
+            className="cursor-pointer hover:text-seafoamMist dark:hover:text-leafGreen transition-colors duration-300"
           >
             Linkedin
           </a>
@@ -30,7 +30,7 @@ const Footer = ({ mood }) => {
             href="https://twitter.com/dhawryluk"
             target="_blank"
             rel="noopener noreferrer"
-            className="cursor-pointer"
+            className="cursor-pointer hover:text-seafoamMist dark:hover:text-leafGreen transition-colors duration-300"
           >
             X (Twitter)
           </a>
@@ -38,7 +38,7 @@ const Footer = ({ mood }) => {
             href="https://github.com/dhawryluk"
             target="_blank"
             rel="noopener noreferrer"
-            className="cursor-pointer"
+            className="cursor-pointer hover:text-seafoamMist dark:hover:text-leafGreen transition-colors duration-300"
           >
             GitHub
           </a>
